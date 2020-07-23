@@ -1,0 +1,113 @@
+<!--This is the COVID-19 confirmed cases choropleth map html-->
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Leaflet Choropleth - Leaflet</title>
+	<!--This is a link to the js with marker data -->
+	<script type="text/javascript" src="Designated_hospital.js"></script>
+	<!--This is a link to the Leaflet stylesheet-->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+	<!--This is a link to the Leaflet JS library-->
+	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	<!--This is a link to the china province data js.-->
+	<script type="text/javascript" src="china.js"></script>
+	<!--This is a link to the own javascript.-->
+	<SCRIPT language="JavaScript" type="text/JavaScript" src="script2.js"></SCRIPT>
+	<!--This is a link to the style css. -->
+	<link rel="stylesheet" media="all" href="CSS2.css" type="text/css">
+	
+	<!--html style sets of text border-->
+	<style>
+	p.groove {border-style: groove;}
+	</style>
+	
+</head>
+
+<body onload="initialize()">
+
+<!--Add the map header that appears on the banner at the top of the web page-->
+<div class="header">
+	<h1>COVID-19 Pandemic Situation in China &#127759</h1>
+</div>
+
+<!--Add the navigation bar to the page, set the 'Home' tab as active-->
+<div class="navbar">
+  <a href="choropleth_map.html" class="active">Home</a>
+  <a href="hospital_search.html">Search for Designated Hospitals&#128269</a>
+  <a href="About_virus.html">How to prevent COVID-19</a>
+  <a href="medical_assistance.html">Need medical assistance</a>
+</div>
+
+<!--Text and image in the web-->
+<div id="text1">
+    <img src="Covid-19-Coronavirus-logo.jpg" width="370" height="110">
+	
+	
+		<p style="background-color:#a297ff;"; class="groove"><b >The Map</b><br>This map shows the number of COVID-19 confirmed cases in each 
+		Chinese province in the form of an choropleth map.<br><br>Hover a specific province, the right info window will display the detailed 
+		data of the province. Click on a specific province to enlarge the area.</p>
+		
+		<p style="background-color:#a297ff;" ; class="groove"><b >The Data</b><br>The data for this map comes from the statistic data of the  Chinese 
+		Center For Disease Control And Prevention(CDC) as of 20/04/2020.<br><br><b>It only includes people tested</b><br>Cases only include people who were tested and confirmed
+		positive. Testing rules and availability vary by country. Some areas may not have data because they haven’t published their 
+		data or haven’t done so recently.<br><br><b>Why do I see different data from different sources?</b><br>Various sources are tracking and 
+		aggregating coronavirus data. They update at different times and may have different ways of gathering data. Click the links below to get
+		the latest COVID-19 epidemic information</p>
+		<!--Add website links-->
+		<a href="https://en.wikipedia.org/wiki/Template:COVID-19_pandemic_data" style="color:blue">* COVID-19 pandemic by country and territory</a>
+		<p> </p>
+		<a href="http://2019ncov.chinacdc.cn/2019-nCoV/" style="color:blue">* COVID-19 pandemic in mainland China from CDC</a>		
+	</div>
+	
+<!--Set the body of the map-->
+<div id="map1" style = 'height: 800px; width: 1302px;' ></div>
+<!--Spaces for the proper display-->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!--Add a website footer with contact details-->
+<div class="footer">
+	<h5>Tel: 010-58900001 | Postcode: 102206 | No.155 Changbai Road, Changping District, Beijing</h5>
+	<h6> &copy; Fugang Zhou, University of Leeds, 2020</h6>
+</div>
+
+
+</body>
+</html>

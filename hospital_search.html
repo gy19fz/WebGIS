@@ -1,0 +1,116 @@
+<!--This is the hospital choropleth map html-->
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Leaflet Choropleth - Leaflet</title>
+	<!--This is a link to the js with marker data -->
+	<script type="text/javascript" src="Designated_hospital.js"></script>
+	<!--This is a link to the Leaflet stylesheet-->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+	<!--This is a link to the Leaflet JS library-->
+	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	<!--This is a link to the china province data js.-->
+	<script type="text/javascript" src="china.js"></script>
+	<!--This is a link to the own javascript.-->
+	<SCRIPT language="JavaScript" type="text/JavaScript" src="script3.js"></SCRIPT>
+	<!--This is a link to the style css. -->
+	<link rel="stylesheet" media="all" href="CSS2.css" type="text/css">
+	
+	<!--html style sets of text border-->
+	<style>
+	p.groove {border-style: groove;}
+	</style>
+	
+</head>
+
+<body onload="initialize()">
+
+<!--Add the map header that appears on the banner at the top of the web page-->
+<div class="header">
+	<h1>COVID-19 Designated Hospital &#128269</h1>
+</div>
+
+<!--Add the navigation bar to the page, set the 'Home' tab as active-->
+<div class="navbar">
+  <a href="choropleth_map.html" class="active">Home</a>
+  <a href="hospital_search.html">Search for Designated Hospitals&#128269</a>
+  <a href="About_virus.html">How to prevent COVID-19</a>
+  <a href="medical_assistance.html">Need medical assistance</a>
+</div>
+
+<!--Text and image in the web-->
+<div id="text1">
+
+		<p style="background-color:#a297ff;"; class="groove"><b >COVID-19 Designated Hospitals</b> are hospitals stipulated
+		by the Chinese government to centrally treat patients with COVID-19. Click the layer button on the right side of 
+		the map to query the designated hospitals of different levels. Click a specific province to get a better view.
+		<br><br><b>The choropleth map
+		</b> shows the sum of the maximum number of beds in designated hospitals in each 
+		province of China. The number of beds is the maximum capacity of the hospital,  not refers to the 
+		beds' number for patients with COVID-19 treatment particularly.</p>
+		
+		<p style="background-color:#a297ff;"; class="groove"><img src="hospital_level1.png" >
+		Hospitals with fewer than 500 beds<br><br><img src="hospital_level2.png" >Hospitals with 500 to 1000 beds
+		<br><br><img src="hospital_level3.png" >Hospitals with 1000 to 1500 beds<br><br><img src="hospital_level4.png" >Hospitals with 
+		1500 to 2000 beds<br><br><img src="hospital_level5.png" >Hospitals with more than 2000 beds</p>
+		
+		<p style="background-color:#a297ff;"; class="groove"><b>The data</b> of designated hospitals are from the National Health Commission of 
+		the People's Republic of China and MedSci, check the flowing links for more information.</p>
+		
+		<!--Add website links-->
+		<a href="http://www.nhc.gov.cn/" style="color:blue">* National Health Commission of China</a>
+		<br><br>
+		<a href="https://www.medsci.cn/" style="color:blue">* MedSci Medical</a>
+		
+</div>
+<!--Add map-->
+<div id="map1" style = 'height: 800px; width: 1302px;' ></div>
+<!--Spaces for the proper display-->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!--Add a website footer with contact details-->
+<div class="footer">
+	<h5>Tel: 010-58900001 | Postcode: 102206 | No.155 Changbai Road, Changping District, Beijing</h5>
+	<h6> &copy; Fugang Zhou, University of Leeds, 2020</h6>
+</div>
+
+</body>
+</html>

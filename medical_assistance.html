@@ -1,0 +1,201 @@
+<!--This is the medical assistance html-->
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title> Medical - Assistance </title>
+	<!--This is a link to the style css. -->
+	<link rel="stylesheet" media="all" href="CSS2.css" type="text/css">
+	
+	<!--Style sets of the feedback form-->
+	<style>
+	p.groove {border-style: groove;}
+	
+	* {
+	box-sizing: border-box;
+	}
+
+	input[type=text], select, textarea {
+	  width: 100%;
+	  padding: 12px;
+	  border: 1px solid #ccc;
+	  border-radius: 4px;
+	  resize: vertical;
+	}
+
+	label {
+	  padding: 12px 12px 12px 0;
+	  display: inline-block;
+	}
+
+	input[type=submit] {
+	  background-color: #4CAF50;
+	  color: white;
+	  padding: 12px 20px;
+	  border: none;
+	  border-radius: 4px;
+	  cursor: pointer;
+	  float: right;
+	}
+
+	input[type=submit]:hover {
+	  background-color: #45a049;
+	}
+
+	.container {
+	  border-radius: 5px;
+	  background-color: #f2f2f2;
+	  padding: 20px;
+	}
+
+	.col-25 {
+	  float: left;
+	  width: 25%;
+	  margin-top: 6px;
+	}
+
+	.col-75 {
+	  float: left;
+	  width: 75%;
+	  margin-top: 6px;
+	}
+
+	/* Clear floats after the columns */
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 600px) {
+	  .col-25, .col-75, input[type=submit] {
+		width: 80%;
+		margin-top: 0;
+	  }
+	}
+	</style>
+	
+</head>
+
+<body >
+
+<!--Add the map header that appears on the banner at the top of the web page-->
+<div class="header">
+	<h1>Need medical assistance &#128657</h1>
+</div>
+
+<!--Add the navigation bar to the page, set the 'Home' tab as active-->
+<div class="navbar">
+  <a href="choropleth_map.html" class="active">Home</a>
+  <a href="hospital_search.html">Search for Designated Hospitals&#128269</a>
+  <a href="About_virus.html">How to prevent COVID-19</a>
+  <a href="medical_assistance.html">Need medical assistance</a>
+</div>
+
+
+<!--Set the textbox and information for the feedback form-->
+<div class="row">
+  <div class="side">
+    <h1>Contact us if you need medical assistance</h1>
+	
+<div class="textbox" style="height:500px;">
+<h3 style="color:red;">Please complete the following form carefully so that we can provide medical assistance to you as soon as possible:</h3>
+<br>
+
+<!--- Form that allows website visitors to leave feedback-->
+
+<div class="container">
+	<!--Name-->
+  <form action="feedback.html">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Name</label>
+    </div>
+    <div class="col-50">
+      <input type="text" id="fname" name="firstname" placeholder="Your name must be the same as your ID">
+    </div>
+  </div>
+  <br>
+  <!--Allow visitor to select age range-->
+  Select Patient's Age Range<br>
+  <input type="radio" id="0-30" name="age" value="30">
+  <label for="male">0-30 years old</label><br>
+  <input type="radio" id="30-50" name="age" value="50">
+  <label for="female">30-50 years old</label><br>
+  <input type="radio" id="50+" name="age" value="51">
+  <label for="other">older than 50 years old</label>
+  
+  <!--Contact number -->
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Contact Number</label>
+    </div>
+    <div class="col-50">
+      <input type="text" id="lname" name="lastname" placeholder="Your phone number..">
+    </div>
+  </div>
+  <!--Allow visitor to select location-->
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Please Select Your Current Located Province </label>
+    </div>
+    <div class="col-20">
+      <select id="country" name="country">
+        <option value="Beijing">Beijing</option>
+        <option value="Shanghai">Shanghai</option>
+        <option value="Taiwan">Taiwan</option>
+		<option value="Hongkong">Hongkong</option>
+		<option value="Gansu">Gansu</option>
+		<option value="Shaanxi">Shaanxi</option>
+		<option value="Tibet">Tibet</option>
+		<option value="Yunnan">Yunnan</option>
+		<option value="Guizhou">Guizhou</option>
+		<option value="Sichuan">Sichuan</option>
+		<option value="Chongqing">Chongqing</option>
+		<option value="Hainan">Hainan</option>
+		<option value="Guangxi">Guangxi</option>
+		<option value="Guangdong">Guangdong</option>
+		<option value="Hunan">Hunan</option>
+		<option value="Hubei">Hubei</option>
+		<option value="Henan">Henan</option>
+		<option value="Shangdong">Shangdong</option>
+		<option value="Jiangxi">Jiangxi</option>
+		<option value="Fujian">Fujian</option>
+		<option value="Zhejiang">Zhejiang</option>
+      </select>
+    </div>
+  </div>
+  <!--Allow visitor to fill detailed address-->
+	<div class="row">
+    <div class="col-25">
+      <label for="lname">Address</label>
+    </div>
+    <div class="col-50">
+      <input type="text" id="lname" name="lastname" placeholder="Please fill in your detailed address">
+    </div>
+	</div>
+	
+   <div class="row">
+    <div class="col-25">
+      <label for="subject">Symptom Description</label>
+    </div>
+    <div class="col-50">
+      <textarea id="subject" name="subject" placeholder="Please describe your physical condition and symptoms" style="height:100px" ></textarea>
+    </div>
+   </div>
+   <!--Add submit button to allow the visitor to submit information-->
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+</div>
+
+<!--Add a website footer with contact details-->
+<div class="footer">
+	<h5>Tel: 010-58900001 | Postcode: 102206 | No.155 Changbai Road, Changping District, Beijing</h5>
+	<h6> &copy; Fugang Zhou, University of Leeds, 2020</h6>
+</div>
+
+</body>
+</html>
